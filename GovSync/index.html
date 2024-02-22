@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>govSync</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .records {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .department {
+            flex: 1;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .record {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .record label {
+            font-weight: bold;
+        }
+        .blockchain-info,
+        .api-integration,
+        .vision-mission {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .blockchain-info h2,
+        .api-integration h2,
+        .vision-mission h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .blockchain-info p,
+        .api-integration p,
+        .vision-mission p {
+            margin-bottom: 10px;
+        }
+        .blockchain-info ul,
+        .api-integration ul,
+        .vision-mission ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .blockchain-info li,
+        .api-integration li,
+        .vision-mission li {
+            padding: 5px 0;
+        }
+        .blockchain-info li:before,
+        .api-integration li:before,
+        .vision-mission li:before {
+            content: "•";
+            margin-right: 5px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>govSync</h1>
+        <div class="records">
+            <div class="department" id="landRecords">
+                <h2>Land Records</h2>
+                <div class="record">
+                    <label>Property ID:</label> L001<br>
+                    <label>Owner Name:</label> John Doe<br>
+                    <label>Location:</label> City A<br>
+                    <label>Agreement:</label> Agreement 1
+                </div>
+                <div class="record">
+                    <label>Property ID:</label> L002<br>
+                    <label>Owner Name:</label> Jane Doe<br>
+                    <label>Location:</label> City B<br>
+                    <label>Agreement:</label> Agreement 2
+                </div>
+            </div>
+            <div class="department" id="revenueRecords">
+                <h2>Revenue Records</h2>
+                <div class="record">
+                    <label>Property ID:</label> R001<br>
+                    <label>Owner Name:</label> Shyamlal Gupta<br>
+                    <label>Location:</label> Satna<br>
+                    <label>Agreement:</label> Agreement 1
+                </div>
+                <div class="record">
+                    <label>Property ID:</label> R002<br>
+                    <label>Owner Name:</label> Raju Tiwari<br>
+                    <label>Location:</label> Rewa<br>
+                    <label>Agreement:</label> Agreement 2
+                </div>
+            </div>
+            <div class="department" id="townPlanningRecords">
+                <h2>Town Planning Records</h2>
+                <div class="record">
+                    <label>Property ID:</label> TP001<br>
+                    <label>Owner Name:</label> Shyamlal Gupta<br>
+                    <label>Location:</label> Satna<br>
+                    <label>Agreement:</label> Agreement 1
+                </div>
+                <div class="record">
+                    <label>Property ID:</label> TP002<br>
+                    <label>Owner Name:</label> Raju Tiwari<br>
+                    <label>Location:</label> Rewa<br>
+                    <label>Agreement:</label> Agreement 2
+                </div>
+            </div>
+        </div>
+
+        <div class="blockchain-info">
+            <h2>Government Blockchain</h2>
+            <p>A government blockchain is a distributed ledger technology (DLT) infrastructure used by the government to securely store and manage data related to various government functions.</p>
+            <ul>
+                <li>Transparency: All transactions on the blockchain are visible to authorized parties, ensuring transparency across all government departments.</li>
+                <li>Immutability: Once data is recorded on the blockchain, it cannot be altered or deleted, providing a tamper-proof record of transactions.</li>
+                <li>Security: Blockchain technology uses cryptographic techniques to secure data, reducing the risk of unauthorized access or fraud.</li>
+                <li>Decentralization: In a private or centralized government blockchain, control over the network is distributed among multiple nodes, enhancing resilience and reliability.</li>
+            </ul>
+        </div>
+
+        <div class="api-integration">
+            <h2>API Integration</h2>
+            <p>API integration plays a crucial role in facilitating the flow of documents and data for verification across various government departments.</p>
+            <ul>
+                <li>Standardization: APIs provide standardized interfaces for accessing and exchanging data between different systems and applications, ensuring compatibility and interoperability.</li>
+                <li>Real-time Data Exchange: APIs enable real-time exchange of information, allowing government departments to access up-to-date data for verification and decision-making.</li>
+                <li>Automation: API integration enables automation of processes such as document verification, reducing manual effort and streamlining operations.</li>
+                <li>Secure Communication: APIs support secure communication protocols, such as HTTPS, ensuring the confidentiality and integrity of data exchanged between systems.</li>
+            </ul>
+        </div>
+
+        <div class="vision-mission">
+            <h2>Vision and Mission</h2>
+            <p><strong>Vision:</strong> To create a centralized and transparent land record management system that ensures efficient access to and management of land-related information, thereby reducing disputes and enhancing overall governance.</p>
+            <p><strong>Mission:</strong> Our mission is to digitize land records, standardize data formats and APIs, implement a secure blockchain infrastructure, establish a user-friendly web portal, and collaborate with various government departments to ensure seamless integration and efficient land record management.</p>
+            <h2>Objectives</h2>
+            <ul>
+                <li>Digitization of land records and documents.</li>
+                <li>Standardization of data formats and APIs.</li>
+                <li>Implementation of a secure blockchain infrastructure.</li>
+                <li>Establishment of a user-friendly web portal for easy access.</li>
+                <li>Collaboration with various government departments for seamless integration.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
